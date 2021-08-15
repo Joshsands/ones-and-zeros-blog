@@ -7,9 +7,11 @@ const sequelize = require('./config/connection');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const helpers = require('./utils/helpers');
+
 // set handlebars.js as the template engine
 const exphbs = require('express-handlebars');
-const hbs = exphbs.create({})
+const hbs = exphbs.create({ helpers })
 
 const session = require('express-session');
 

@@ -1,8 +1,3 @@
-{{#if loggedIn}}
-<script src="/javascript/comment.js" defer></script>
-<script src="/javascript/upvote.js" defer></script>
-{{/if}}
-
 {{> post-info post }}
 
 {{#if loggedIn}}
@@ -19,3 +14,8 @@
 {{/if}}
 
 {{> comments post.comments }}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/upvote.js"></script>
+{{/if}}
