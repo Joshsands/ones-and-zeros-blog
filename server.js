@@ -41,6 +41,9 @@ app.use(express.urlencoded({ extended: true }));
 // turn on routes
 app.use(routes);
 
+// setup the server to use routes from controlers
+app.use(require('./controllers/'));
+
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
