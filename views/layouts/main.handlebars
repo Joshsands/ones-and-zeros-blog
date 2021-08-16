@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ones and Zeros</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
@@ -14,12 +15,12 @@
     <h1>
       <a href="/">Ones and Zeros</a>
     </h1>
-    <nav>
+    <nav class="nav nav-pills nav-justified">
       {{#if loggedIn}}
-      <a href="/dashboard">dashboard</a>
-      <button id="logout" class="btn-no-style">logout</button>
+      <a class="nav-item nav-link active" href="/dashboard">dashboard</a>
+      <button id="logout" class="btn btn-danger">logout</button>
       {{else}}
-      <a href="/login">login</a>
+      <a href="/login"> <button class="btn btn-success">login</button></a>
       {{/if}}
     </nav>
   </header>

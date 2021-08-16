@@ -18,7 +18,7 @@ const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-  secret: 'Super secret secret',
+  secret: process.env.SECRET,
   // can add options to the cookie brackets like maximum age.
   cookie: {},
   resave: false,
