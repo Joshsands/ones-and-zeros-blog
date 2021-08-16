@@ -1,19 +1,33 @@
+<div class="card text-center">
 {{> post-info post }}
-
+</div>
 {{#if loggedIn}}
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
+<form class="comment-form text-center">
+  <div class="form-group">
+    <textarea name="comment-body" rows="5" cols="30"></textarea>
   </div>
 
   <div>
-    <button type="submit">add comment</button>
-    <button type="button" class="upvote-btn">upvote</button>
+
+    <button type="button" class="upvote-btn btn">
+      <span class="text-success">
+      <i class="fa fa-heart fa-2x"></i>
+      </span>
+      </button>
+
+    <button type="submit" class="btn">
+      <span class="text-info">
+      <i class="fa fa-plus fa-2x"></i>
+      </span>
+      </button>
+
   </div>
 </form>
 {{/if}}
+<h1 class="text-center">Comments</h1>
 
-{{> comments post.comments }}
+ {{> comments post.comments }}
+
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>

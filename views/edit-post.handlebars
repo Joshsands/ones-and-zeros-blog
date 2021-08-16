@@ -1,20 +1,39 @@
 <article>
-  <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
+  <br>
+  <h2 class="text-center">
     Edit Post
   </h2>
   <form class="edit-post-form">
-    <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
+    <div class="text-center">
+      <input name="post-title" type="text" value="{{post.title}}" class="form-control form-control-lg" />
       <span>({{format_url post.post_url}})</span>
     </div>
+    <br>
     <div>
-      {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
+      
+      <h4>
+    <span class="text-success">{{post.vote_count}}
+      <i class="fas fa-heart fa-lg"></i>
+    </span>
+       by you on {{format_date post.created_at}}
       |
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+      <a href="/post/{{post.id}}">
+      <span class="text-success"> <a href="/post/{{id}}">{{post.comments.length}}  <i
+<i class="far fa-comments fa-lg"></i></a></span></a>
+   </h4>
     </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
+    
+    <button type="submit" class="btn">
+      <span class="text-info">
+      <i class="fa fa-save fa-2x"></i>
+      </span>
+      </button>
+
+    <button type="button" class="delete-post-btn btn">
+      <span class="text-info">
+      <i class="fa fa-trash fa-2x"></i>
+      </span>
+      </button>
   </form>
 </article>
 
@@ -24,7 +43,11 @@
   </div>
 
   <div>
-    <button type="submit">add comment</button>
+    <button type="submit" class="btn">
+      <span class="text-info">
+      <i class="fa fa-plus fa-2x"></i>
+      </span>
+      </button>
   </div>
 </form>
 

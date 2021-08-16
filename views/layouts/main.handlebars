@@ -4,23 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ones and Zeros</title>
+  <title>Ones & Zeros</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"/>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
   <div class="wrapper">
   <header>
-    <h1>
-      <a href="/">Ones and Zeros</a>
+    <h1 class="text-center display-1">
+      <a href="/" class="badge badge-pill badge-success">Ones & Zeros</a>
     </h1>
-    <nav class="nav nav-pills nav-justified">
+    <nav class="nav nav-pills justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link btn btn-secondary" href="/">Home</a>
+      </li>
       {{#if loggedIn}}
-      <a class="nav-item nav-link active" href="/dashboard">dashboard</a>
-      <button id="logout" class="nav-item btn btn-danger">logout</button>
+      <li class="nav-item">
+        <a class="nav-link btn btn-primary" href="/dashboard">Profile</a>
+      </li>
+      <li class="nav-item">
+        <button id="logout" class="nav-link btn btn-danger">Logout</button>
+      </li>
       {{else}}
-      <a href="/login"> <button class="btn btn-success">login</button></a>
+      <li class="nav-item">
+      <a href="/login" class="nav-link btn btn-success">Login</a>
+      </li>
       {{/if}}
     </nav>
   </header>
@@ -28,12 +42,23 @@
     <main>
       {{{ body }}}
     </main>
-    <footer>
-      Thanks for visiting!
+    <footer class="text-center ">
+      <p class="text-success">It’s really hard to design products by focus groups. A lot of times, people don’t know what they want until you show it to them.</p>
+      <p class="text-success">-Steve Jobs</p>
     </footer>
   </div>
 
+ <div class="mode">
+        Dark mode:            
+        <span class="change">OFF</span>
+    </div>
 </body>
+
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+
+ <script src="/javascript/main.js" defer></script>
 
   {{#if loggedIn}}
   <script src="/javascript/logout.js" defer></script>

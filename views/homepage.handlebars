@@ -1,7 +1,13 @@
-<ol class="post-list">
+<ul class="post-list">
+
   {{#each posts as |post|}}
-  <li>
+  <li class="post-child">
+    <div class="card w-100 mx-auto text-center" style="max-width: 60rem;">
     {{> post-info post }}
+  </div>
+  <br>
   </li>
   {{/each}}
-</ol>
+
+</ul>
+

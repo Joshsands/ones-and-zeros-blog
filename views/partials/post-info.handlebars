@@ -1,15 +1,23 @@
 <article class="post">
-  <div class="title">
-    <a href="{{post_url}}" target="_blank">{{title}}</a>
+  <div class="title card-header">
+   <h4> <p class="p-edit"> <a href="{{post_url}}" target="_blank">{{title}}</a> </p></h4>
     <span>({{format_url post_url}})</span>
   </div>
-  <div class="meta">
-    {{vote_count}}
-    {{format_plural "point" vote_count}} by
-    {{user.username}}
+ <h4><div class="meta card-body">
+    by
+    <span class="text-danger">{{user.username}}</span>
     on
-    {{format_date created_at}}
-    |
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}} </a>
+    <span class="text-info">{{format_date created_at}}</span>
+  </div>
+  </h4> 
+  <div class="card-footer">
+    <h4>
+    <span class="text-success">{{vote_count}}
+      <i class="fas fa-heart fa-lg"></i>
+    </span>
+   &
+    <span class="text-success"> <a href="/post/{{id}}">{{comments.length}}  <i
+<i class="far fa-comments fa-lg"></i></a></span>
+</h4>
   </div>
 </article>

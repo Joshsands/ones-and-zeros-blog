@@ -18,27 +18,17 @@
 
 ![Ones&Zeros Snapshot](./assets/snapshot.png)
 
-[CLICK HERE FOR THE FULL DEMONSTRATION VIDEO!]()
-
 ## Project Description
 
 * A tech blog site where users can post and comment about the latest developer technologies 
 
 ## Installation Instructions
 
-* Pull the Github repository to your local drive, open it in an IDE and enter "npm install" in the terminal to install the dependent modules from the package.json file in the root folder.
-* link your MySQL login information to the connection.js file by creating a .env file in the root folder and entering the following data:
-    *   DB_NAME='ecommerce_db'
-    *   DB_USER='Username'
-    *   DB_PW='password'
-* Open the MySQL shell and create the database by entering source db/schemal.sql in the MySQL shell. Then enter quit in the terminal to exit the MySQL shell.
-* Then enter npm run seed into the terminal to seed the sample data into the database.
-* Then enter NPM start in the terminal to open port 3001.
-* Once you open the port you can enter API requests using Insomnia as show in the demonstration video.
+* None
 
 ## Usage Information
 
-* 
+* None
 
 ## Contributor Guidelines
 
