@@ -19,7 +19,7 @@
 ![Ones&Zeros Snapshot](./assets/snapshot.png)
 
 ## Visual Demonstration
-![Deployed Application](https://onesandzerosblog.herokuapp.com/)
+* [Deployed Application](https://onesandzerosblog.herokuapp.com/)
 
 ## Project Description
 
