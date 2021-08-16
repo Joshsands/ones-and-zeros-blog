@@ -1,6 +1,6 @@
-const Sequelize = require('sequelize');
+// const Sequelize = require('sequelize');
 
-require('dotenv').config();
+// require('dotenv').config();
 
 // let sequelize;
 
@@ -42,4 +42,4 @@ connection.connect(function(err) {
 module.exports = connection;
 
 
-module.exports = sequelize;
+// module.exports = sequelize;
