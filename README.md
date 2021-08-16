@@ -18,6 +18,9 @@
 
 ![Ones&Zeros Snapshot](./assets/snapshot.png)
 
+## Visual Demonstration
+![Deployed Application](https://onesandzerosblog.herokuapp.com/)
+
 ## Project Description
 
 * A tech blog site where users can post and comment about the latest developer technologies 
